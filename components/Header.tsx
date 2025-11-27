@@ -10,20 +10,9 @@ const Header: React.FC = () => {
     <header className="sticky top-4 z-50 px-4">
       <div className="max-w-7xl mx-auto bg-white border-3 border-black rounded-full shadow-pop px-6 py-3 flex justify-between items-center">
           
-          {/* Logo */}
+          {/* Logo - Using Text Based Logo for reliability */}
           <div className="flex-shrink-0 flex items-center cursor-pointer group" onClick={() => window.scrollTo(0,0)}>
-             <img 
-                src="/logo.png" 
-                alt="WunderWings Logo" 
-                className="h-10 md:h-14 w-auto object-contain group-hover:-rotate-2 transition-transform duration-300 drop-shadow-[2px_2px_0px_rgba(0,0,0,1)]"
-                onError={(e) => {
-                    // Fallback if image is missing
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                }}
-             />
-             {/* Fallback Text if Image Fails */}
-             <span className="hidden font-display text-3xl md:text-4xl text-wunder-red tracking-tighter text-outline-sm">
+             <span className="font-display text-3xl md:text-4xl text-wunder-red tracking-tighter text-outline-sm group-hover:rotate-[-2deg] transition-transform duration-200">
                 WUNDERWINGS
              </span>
           </div>

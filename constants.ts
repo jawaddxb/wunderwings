@@ -8,7 +8,7 @@ export const MENU_ITEMS: MenuItem[] = [
     description: "Roasted garlic butter, parmesan snow, italian herbs. All of the flavor, none of the heat.",
     price: 45, // approx converted to AED/generic pricing
     spiceLevel: 1,
-    image: "/brooklyn.png", // Ensure you upload 'brooklyn.png' to your public folder!
+    image: "https://images.unsplash.com/photo-1642686375024-52641fee6087?q=80&w=800&auto=format&fit=crop", 
     tags: ["Mild", "Cheesy"],
     stats: { sweetness: 10, spiciness: 0, tanginess: 30, crunch: 60, messiness: 50 }
   },

@@ -15,22 +15,26 @@ const App: React.FC = () => {
       {/* Hero Section */}
       <section className="relative pt-12 pb-20 px-4 overflow-hidden min-h-[85vh] flex flex-col justify-center">
         
-        {/* Left Hero Image - Hero Artboard 5 */}
-        <div className="hidden xl:block absolute top-1/2 -translate-y-1/2 left-[2%] w-[25vw] max-w-sm z-0 pointer-events-none">
-            <img 
-                src="/heroartboard5.png" 
-                alt="Wingin It Ghost" 
-                className="w-full h-auto object-contain animate-float-left drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]" 
-            />
+        {/* Left Hero Image - Replaced local asset with Unsplash "Card" */}
+        <div className="hidden xl:block absolute top-1/2 -translate-y-1/2 left-[5%] w-[20vw] max-w-xs z-0 pointer-events-none animate-float-left">
+            <div className="bg-white p-3 pb-8 border-4 border-black shadow-pop rotate-[-6deg]">
+                <img 
+                    src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=600&q=80" 
+                    alt="Delicious Wings" 
+                    className="w-full h-auto aspect-square object-cover border-2 border-black grayscale-[20%]" 
+                />
+            </div>
         </div>
 
-        {/* Right Hero Image - Hero Artboard 6 */}
-        <div className="hidden xl:block absolute top-1/2 -translate-y-1/2 right-[2%] w-[25vw] max-w-sm z-0 pointer-events-none">
-             <img 
-                src="/heroartboard6.png" 
-                alt="Skateboarding Ghost" 
-                className="w-full h-auto object-contain animate-float-right drop-shadow-[0_10px_10px_rgba(0,0,0,0.3)]" 
-            />
+        {/* Right Hero Image - Replaced local asset with Unsplash "Card" */}
+        <div className="hidden xl:block absolute top-1/2 -translate-y-1/2 right-[5%] w-[20vw] max-w-xs z-0 pointer-events-none animate-float-right">
+             <div className="bg-white p-3 pb-8 border-4 border-black shadow-pop rotate-[6deg]">
+                <img 
+                    src="https://images.unsplash.com/photo-1527477396000-6489d10605b9?auto=format&fit=crop&w=600&q=80" 
+                    alt="BBQ Wings" 
+                    className="w-full h-auto aspect-square object-cover border-2 border-black grayscale-[20%]" 
+                />
+            </div>
         </div>
 
         <div className="max-w-7xl mx-auto text-center relative z-10">
